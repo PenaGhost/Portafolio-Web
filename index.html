@@ -3,9 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="html, css, javascript, portafolio, developer">
+    
+    <title>Portfolio Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2dad47da9b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="LogoSample_ByTailorBrands.jpg" type="image/gif" sizes="16x16">
 </head>
 <body>
-    
+
+
+<div class="wrapper">
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <h2><span>J</span>DP</h2>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a class="active" href="#">Inicio</a></li>
+        <li><a href="#">Acerca de Mi</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars" id="toggle_open"></i>
+        <i class="fa-solid fa-close" id="toggle_close"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="info-content">
+      <span class="info-content__subtitle">FullStack Developer</span>
+      <h1>I'm <span>Juan David</span> "Penaghost"</h1>
+      <div class="sotial-network">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p class ="info-content__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus illo natus non provident veritatis sequi, dolorem suscipit sit rem laborum numquam nesciunt a nihil perspiciatis cumque recusandae vel eligendi.</p>
+      <a download href="#">
+        <button class="download-cv">Download CV</button>
+      </a>
+    </div>
+    <img src="WhatsApp Image 2023-09-03 at 10.27.42 PM.jpeg" alt="Juan David picture">
+  </main>
+</div>
+
+<div class="about">
+  <img src="WhatsApp Image 2023-09-04 at 12.13.25 AM.jpeg" alt="Juan David Penagos Logo">
+  <div class="about-info">
+    <h2>Acerca de mi</h2>
+    <div class="divider"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quo explicabo veniam asperiores illum, nesciunt maxime dolores perferendis quia consequatur nemo atque consectetur, pariatur fuga quam corrupti vel incidunt possimus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat maiores eaque facere laboriosam reiciendis esse. Hic facere repellat itaque blanditiis, officiis molestias? Perspiciatis aliquam, quae laborum assumenda numquam facere!</p>
+    <button class="download-cv">Leer mas</button>
+  </div>
+</div>
+
+<div class="portfolio">
+  <div class="portfolio-headings">
+    <h2>Mi Portafolio</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card_img">
+      </div>
+      <div class="card_tittle">
+        <h2>Descripcion Proyecto</h2>
+      </div>
+      <div class="card_projects-links">
+        <a href="">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-laptop-code"></i>
+        </a>
+      </div>
+      <div class="project-details-content"> 
+        <button class="project-details download-cv">
+        <a href="">
+          Detalles de Proyecto
+        </a>        
+      </button>
+    </div>
+     
+    </div>
+    <div class="card">
+      <div class="card_img">
+      </div>
+      <div class="card_tittle">
+        <h2>Descripcion Proyecto</h2>
+        
+      </div>
+      <div class="card_projects-links">
+        <a href="">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-laptop-code"></i>
+        </a>
+      </div>
+      <div class="project-details-content"> 
+        <button class="project-details download-cv">
+        <a href="">
+          Detalles de Proyecto
+        </a>        
+      </button>
+    </div>
+     
+    </div>
+    <div class="card">
+      <div class="card_img">
+      </div>
+      <div class="card_tittle">
+        <h2>Descripcion Proyecto</h2>
+      </div>
+      <div class="card_projects-links">
+        <a href="">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-laptop-code"></i>
+        </a>
+      </div>
+      <div class="project-details-content"> 
+        <button class="project-details download-cv">
+        <a href="">
+          Detalles de Proyecto
+        </a>        
+      </button>
+    </div>
+   </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="contact-headings">
+    <h2>Mantente en contacto</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="container-contact">
+    <img src="3d-web-development-illustration-png.webp" alt="developer picture">
+    <div class="contact-form">
+      <h4>Enviame un Mensaje...</h4>
+      <form class="form">
+        <input type="text"placeholder="Nombre">        
+        <input type="email"placeholder="Correo">
+        <textarea placeholder="Ingresa tu Mensaje..."></textarea>
+        <button class="btn-submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h2><Span>Juand</Span> Penagos</h2>
+    <h5>Fullstacks <span>Developer</span></h5>
+  </div>
+  <div class="sotial-network">
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-square-x-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
 </body>
 </html>
