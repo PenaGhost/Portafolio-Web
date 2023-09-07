@@ -36,12 +36,6 @@ justify-content: space-around;
 font-size: 1.5rem;
 }
 
-.toggle-menu,
-.info-content__subtitle,
-.info-content .sotial-network { 
-    display: none;
-}
-
 .menu li {
     list-style: none;    
 }
@@ -52,7 +46,6 @@ font-size: 1.5rem;
     cursor: pointer;
     padding: 10px 20px;
     transition:ease-in-out .4s;
-    border-radius: 10px;
 }
 
 .menu .active {
@@ -73,15 +66,8 @@ font-size: 1.5rem;
     align-items: center;
 }
 
-.main img {
-    width: 400px;
-    height: 650px;
-    border-radius:50rem;
-    border: solid goldenrod 10px;
-}
-
 h1 {
-    font-size: clamp(4vw, 1.5rem, 3rem);
+    font-size: 3rem;
 }
 
 span{ 
@@ -106,6 +92,12 @@ span{
     cursor: pointer;
 }
 
+.main img {
+    width: 400px;
+    height: 650px;
+    border-radius:50rem;
+    border: solid goldenrod 10px;
+}
 
 .about {
     display: grid;
@@ -334,88 +326,5 @@ font-size: 4rem;
     width: 300px;
     justify-content: space-between;
     margin-top: 1rem;
-    
-}
-
-
-@media screen and (max-width: 800px) {
-    
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        background-color: #225f9c;
-        z-index: 1;
-        transform: translateX(-110%);
-        transition: all .5s ease-in-out;
-    }
-
-    .menu li{
-    margin: 1.5rem 1.5rem;
-    }
-
-    .toggle-menu{
-        display: block;
-    }
-
-    .show-menu {
-        transform: translateX(0%);
-        transition: all .5s ease-in-out;
-    }
-
-    .fa-bars {
-        font-size: 2.5rem;
-        margin-top: -.2rem;
-    }
-
-    .toggle-menu .fa-close{
-        font-size: 3rem;
-        margin-top: -.2rem;
-        display: none;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .main img {
-        width: min(60%, 350px);
-        height: auto;
-    }
-
-    .info-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    
-    .info-content .sotial-network,
-    .info-content__subtitle {
-        display: block;
-        
-    }
-
-    .info-content .sotial-network {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .download-cv {
-        display: none;
-    }
-
-    .info-content__p {
-        display: none;
-    }
-
-    
-
     
 }
