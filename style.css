@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2d8ad1;
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.brand span {
+    color: goldenrod;
+}
+
+.brand h2 {
+    font-size: 5rem;
+}
+
+.menu {
+display: flex;
+width: 50%;
+justify-content: space-around;
+font-size: 1.5rem;
+}
+
+.menu li {
+    list-style: none;    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition:ease-in-out .4s;
+}
+
+.menu .active {
+    color: goldenrod;
+}
+
+.menu a:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+span{ 
+    color: goldenrod;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 1px 3px 11px -5px white;
+    font-size: 1rem;
+    
+
+}
+
+.download-cv:hover {
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.main img {
+    width: 400px;
+    height: 650px;
+    border-radius:50rem;
+    border: solid goldenrod 10px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+    border-right: solid goldenrod 10px;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 3rem;
+}
+
+.about-info h2 {
+    font-size: 3rem;
+    color: #2d8ad1;
+}
+
+.divider {
+    height: 5px;
+    width: 200px;
+    background-color: goldenrod;
+    margin-top: 2px;
+    margin-bottom: 3rem;
+}
+
+.about p {
+    margin: 1rem;
+}
+
+.portfolio {
+    width: 100vw;
+    background-color: #2d8ad1;
+    color: white;
+}
+
+.portfolio-headings {
+    width: 100vw;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio-headings h2 {
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+    background-color: #225f9c;
+    margin: 1rem;
+    border-radius: 5rem;
+    border: goldenrod 5px solid;
+}
+
+.card_img {
+    width: 100%;
+    height: 150px;
+    background-image: url(521-5217309_html-css-javascript-hd-png-download.png);    
+    background-size: cover;
+    border-radius: 5rem;
+    border: #2d8ad1 5px solid;
+}
+
+.card_tittle {
+padding: 20px;
+font-size: 1.2rem;
+}
+
+.card_projects-links {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card_projects-links a {
+    color: white;
+    text-decoration: none;    
+}
+
+.card_projects-links i {
+    font-size: 3rem;
+}
+
+.card .project-details {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    margin: 2rem;
+}
+
+.card .project-details a {
+    text-decoration: none;
+    color:black ;
+    text-transform: uppercase;
+}
+
+.project-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.contact-section {
+    background-color: goldenrod;
+    width: 100vw;
+    height: 100vh;
+}
+
+h4{
+    font-size: 2rem;
+    color: #2d8ad1;
+}
+
+.contact-headings h2 {
+font-size: 3rem;
+color: #2d8ad1;
+}
+
+
+.container-contact {
+    padding: 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+
+}
+
+.container-contact img {
+    width: 750px;
+    height: 700;
+    bottom: 0px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 3rem;
+}
+
+
+.form input {
+padding: 10px;
+margin-bottom: 1rem;
+background-color:goldenrod;
+color: rgb(255, 255, 255);
+border: none;
+border-bottom: 3px solid #2d8ad1;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    padding: 1.5rem;
+    border: solid 3px #2d8ad1;
+    color: white;
+}
+
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1rem;
+    border: none;
+    text-transform:uppercase;
+    border-radius: 1rem;
+    background-color: #2d8ad1;
+    color: white;
+    box-shadow: 1px 3px 11px -5px white;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #2d8ad1;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #2d8ad1;
+    color:white ;
+}
+
+h2 span {
+    color: goldenrod;
+}
+h5 span{
+    color: goldenrod;
+}
+
+.footer-content h2 {
+font-size: 4rem;
+}
+
+.footer-content h5,
+.sotial-network i{
+    font-size: 2rem;
+    
+}
+
+.sotial-network{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+}
+
